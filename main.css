@@ -1,0 +1,9 @@
+/* Checkbox 가시성 개선 */
+input[type="checkbox"]:not([id^="no"],[value="N"]),input[type="checkbox"][id^="yes"]{
+	outline-offset: 8px;
+	outline: 12px solid red !important;
+}
+input[type="checkbox"]:not([id^="no"],[value="N"]):checked,input[type="checkbox"][id^="yes"]:checked{
+	outline-offset: 8px;
+	outline: 12px dashed green !important;
+}
